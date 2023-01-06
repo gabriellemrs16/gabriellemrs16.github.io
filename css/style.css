@@ -1,10 +1,23 @@
 body {
-	background-color: darkorchid;
+	background-color: #E3ACF9;
 	font-family: 'Zilla Slab', serif;
 }
 
-nav {
-	background-color: aqua;
+header {
+	font-family: 'Zilla Slab', serif;
+}
+
+header h1 {
+	font-family: 'Bitter', serif;
+}
+
+div h3 {
+	font-family: 'Zilla Slab', serif;
+}
+
+ul li {
+	font-family: 'Zilla Slab', serif;
+	font-size: 18px;
 }
 
 fieldset {
@@ -14,13 +27,19 @@ fieldset {
 	padding-top: 10px;
 }
 
+fieldset legend {
+	font-family: 'Zilla Slab', serif;
+}
+
 fieldset p {
+	font-family: 'Bitter', serif;
 	margin: 0px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 
 fieldset li {
+	font-family: 'Zilla Slab', serif;
 	margin: 0px;
 	padding-bottom: 5px;
 	padding-top: 5px;
@@ -56,3 +75,113 @@ header, footer {text-align: center;}
 }
 
  */
+
+ /*******
+Classes
+*******/
+.columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 25px;
+	margin: 0 auto;
+	max-width: 1440px;
+	width: 95%;
+}
+
+.border {
+	border: 2px solid #000;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/***
+Nav
+***/
+nav {
+	background-color: aqua;
+	font-family: 'Zilla Slab', serif;
+}
+
+nav:hover ul {
+	display: block;
+}
+
+/************
+Media Queries
+************/
+@media screen and (min-width: 425px) {
+	header h1 {font-size: 25px;}
+	h1 {font-size: 20px;}
+	section {
+		font-size: 15px;
+		padding: 5px 10px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	p {font-size: 16px;}
+	h1 {font-size: 30px;}
+	header h1 {font-size: 50px;}
+	h2 {font-size: 36px;}
+	h3 {font-size: 25px;}
+	section {
+		font-size: 25px;
+		padding: 5px 32px;
+	}
+	section h3 {font-size: 20px;}
+	nav ul {
+		background: transparent;
+		display: inline-block;
+		float: right;
+		text-align: right;
+		top: 18px;
+		width: 75%;
+	}
+	nav li {
+		display: inline-block;
+		padding: 10px;
+		width: 15%
+	}
+	input[type="submit"] {font-size: 15px;}
+	legend {font-size: 20px;}
+	ol li {font-size: 16px;}
+	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 16px;}
+}
+
+@media screen and (min-width: 1024px) {
+	p {font-size: 17px;}
+	h1 {font-size: 40px;}
+	header h1 {font-size: 75px;}
+	h3 {font-size: 37px;}
+	section h1 {font-size: 30px;}
+	label {font-size: 17px;}
+	legend {font-size: 22px;}
+	input[type="submit"] {font-size: 15px;}
+	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 17px;}
+	#hamburger {display: none;}
+}
+
+@media screen and (min-width: 1440px) {
+	p {font-size: 23px;}
+	h1 {font-size: 50px;}
+	section h1 {font-size: 35px;}
+	section h3 {font-size: 27px;}
+	label {font-size: 23px;}
+	legend {font-size: 27px;}
+	input[type="submit"] {font-size: 20px;}
+	ol li {font-size: 25px;}
+	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 23px;}
+}
+
+@media screen and (min-width: 1920px) {
+	p {font-size: 28px;}
+	h1 {font-size: 55px;}
+	section h1 {font-size: 40px;}
+	section h3 {font-size: 32px;}
+	label {font-size: 28px;}
+	legend {font-size: 32px;}
+	input[type="submit"] {font-size: 25px;}
+	ol li {font-size: 30px;}
+	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 28px;}
+	nav {font-size: 30px;}
+}
