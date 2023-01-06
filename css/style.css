@@ -81,10 +81,10 @@ Classes
 *******/
 .columns {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 25px;
 	margin: 0 auto;
 	max-width: 1440px;
+	padding-bottom: 25px;
 	width: 95%;
 }
 
@@ -121,7 +121,7 @@ Media Queries
 @media screen and (min-width: 768px) {
 	p {font-size: 16px;}
 	h1 {font-size: 30px;}
-	header h1 {font-size: 50px;}
+	header h1 {font-size: 30px;}
 	h2 {font-size: 36px;}
 	h3 {font-size: 25px;}
 	section {
@@ -151,7 +151,7 @@ Media Queries
 @media screen and (min-width: 1024px) {
 	p {font-size: 17px;}
 	h1 {font-size: 40px;}
-	header h1 {font-size: 75px;}
+	header h1 {font-size: 40px;}
 	h3 {font-size: 37px;}
 	section h1 {font-size: 30px;}
 	label {font-size: 17px;}
@@ -159,11 +159,12 @@ Media Queries
 	input[type="submit"] {font-size: 15px;}
 	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 17px;}
 	#hamburger {display: none;}
+	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
 }
 
 @media screen and (min-width: 1440px) {
 	p {font-size: 23px;}
-	h1 {font-size: 50px;}
+	h1 {font-size: 30px;}
 	section h1 {font-size: 35px;}
 	section h3 {font-size: 27px;}
 	label {font-size: 23px;}
@@ -171,11 +172,12 @@ Media Queries
 	input[type="submit"] {font-size: 20px;}
 	ol li {font-size: 25px;}
 	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 23px;}
+	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
 }
 
 @media screen and (min-width: 1920px) {
 	p {font-size: 28px;}
-	h1 {font-size: 55px;}
+	h1 {font-size: 40px;}
 	section h1 {font-size: 40px;}
 	section h3 {font-size: 32px;}
 	label {font-size: 28px;}
@@ -184,4 +186,5 @@ Media Queries
 	ol li {font-size: 30px;}
 	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 28px;}
 	nav {font-size: 30px;}
+	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
 }
