@@ -1,4 +1,11 @@
-.btn
+body {
+	background-color: darkorchid;
+	font-family: 'Zilla Slab', serif;
+}
+
+nav {
+	background-color: aqua;
+}
 
 fieldset {
 	border-color: black;
@@ -22,6 +29,12 @@ fieldset li {
 legend {
 	font-size: 15px;
 }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+	display: block;
+}
+
+header, footer {text-align: center;}
 
 .carousel-caption {
     background: rgba(0, 0, 0, 0.45);
