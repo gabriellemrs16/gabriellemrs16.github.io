@@ -142,6 +142,7 @@ Media Queries
 		padding: 10px;
 		width: 15%
 	}
+	#hamburger {padding-right: 10px;}
 	input[type="submit"] {font-size: 15px;}
 	legend {font-size: 20px;}
 	ol li {font-size: 16px;}
