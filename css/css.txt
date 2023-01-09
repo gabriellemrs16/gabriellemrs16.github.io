@@ -73,7 +73,7 @@ header, footer {text-align: center;}
 .carousel-caption p {
 	font-size: 15px;
   }
-  
+
 /* .carousel-caption {
     width:100%;
     height:100%;;
