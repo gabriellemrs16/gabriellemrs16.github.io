@@ -14,6 +14,7 @@ div h2 {
 
 div h3 {
 	font-family: 'Zilla Slab', serif;
+	margin: 10px;
 	text-align: center;
 }
 
@@ -23,7 +24,7 @@ div h4 {
 	text-align: center;
 }
 
-div p {padding: 0px 20px;}
+div p {padding: 0px 10px;}
 
 p {text-align: justify;}
 
@@ -39,9 +40,7 @@ ul li {
 fieldset {
 	border-color: black;
 	border: solid;
-	margin-bottom: 15px;
-	margin-top: 15px;
-	padding-top: 10px;
+	margin: 5px 0;
 }
 
 fieldset legend {
@@ -122,8 +121,7 @@ Classes
 
 .border {
 	border: 2px solid #000;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 8px;
 }
 
 .center {
@@ -233,7 +231,7 @@ Media Queries
 	section h3 {font-size: 27px;}
 	label {font-size: 23px;}
 	fieldset legend {font-size: 27px;}
-	input[type="submit"] {font-size: 20px;}
+	input[type="submit"] {font-size: 16px;}
 	ol li {font-size: 25px;}
 	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 23px;}
 	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
