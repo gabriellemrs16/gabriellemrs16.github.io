@@ -3,12 +3,13 @@ body {
 	font-family: 'Zilla Slab', serif;
 }
 
-header {
-	font-family: 'Zilla Slab', serif;
-}
-
 header h1 {
 	font-family: 'Bitter', serif;
+}
+
+div h2 {
+	font-family: 'Bitter', serif;
+	text-align: right;
 }
 
 div h3 {
@@ -16,11 +17,17 @@ div h3 {
 	text-align: center;
 }
 
-p {
-	text-align: justify;
+div h4 {
+	font-family: 'Bitter', serif;
+	font-size: 22px;
+	text-align: center;
 }
 
-section p {
+div p {padding: 0px 20px;}
+
+p {text-align: justify;}
+
+section,div p {
 	font-family: 'Zilla Slab', serif;
 }
 
@@ -63,28 +70,34 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 	display: block;
 }
 
-header, footer {text-align: center;}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.45);
-	border-radius: 15px;
+header, footer {
+	font-family: 'Zilla Slab', serif;
+	text-align: center;
 }
 
-.carousel-caption p {
-	font-size: 15px;
-  }
-  
-/* .carousel-caption {
-    width:100%;
-    height:100%;;
+footer {
+	font-size: 16px;
 }
 
-.carousel-caption h3 {
-  text-align:left;
-  margin-left:30px;
+div img {
+	border: 2px solid black;
+	border-radius: 20px 0px;
 }
 
- */
+button img {
+	border: none;
+	border-radius: 5px;
+}
+
+input {
+	border-radius: 5px;
+	background-color: gray;
+}
+
+input:hover {
+	background-color: darkgray;
+	box-shadow: 0 0 0 2px black;
+}
 
  /*******
 Classes
@@ -98,10 +111,49 @@ Classes
 	width: 95%;
 }
 
+.column {
+	float: left;
+	padding: 10px;
+}
+
+.right {width: 35%;}
+.middle {width: 15%;}
+.left {width: 50%;}
+
 .border {
 	border: 2px solid #000;
 	padding-right: 15px;
 	padding-left: 15px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-inner {
+	border-radius: 5px;
+	transition: 5s;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+	border-radius: 15px;
+}
+
+.carousel-caption p {
+	font-size: 15px;
+}
+  
+/* .carousel-caption {
+    width:100%;
+    height:100%;;
+}
+
+.carousel-caption h3 {
+  text-align:left;
+  margin-left:30px;
 }
 
 /***
