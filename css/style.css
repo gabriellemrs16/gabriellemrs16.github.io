@@ -25,6 +25,7 @@ div h4 {
 	font-family: 'Bitter', serif;
 	font-size: 20px;
 	font-weight: 500;
+	margin: 5px 0;
 	text-align: center;
 }
 
@@ -59,18 +60,13 @@ fieldset {
 	margin: 15px;
 }
 
-div img {
-	border: 2px solid black;
-	border-radius: 0px 20px;
-}
-
-button img {
-	border: none;
-	border-radius: 5px;
-}
-
 ul {
 	padding-left: 40px;
+}
+
+form {
+	text-align: center;
+	vertical-align: bottom;
 }
 
 input {
@@ -80,7 +76,7 @@ input {
 
 input:hover {
 	background-color: darkgray;
-	box-shadow: 0 0 0 2px black;
+	box-shadow: 0 0 0 1px black;
 }
 
 /*******
@@ -100,6 +96,11 @@ Classes
 	padding: 10px;
 }
 
+.image {
+	border: 2px solid black;
+	border-radius: 0px 20px;
+}
+
 .right {
 	width: 45%;
 }
@@ -109,14 +110,34 @@ Classes
 }
 
 .border {
-	border: 2px solid #000;
+	border: 1px solid black;
 	padding: 8px;
+}
+
+.borders {
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.child {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+.child input {
+	margin: 0 auto;
+}
+
+.parent {
+	display: table;
+	text-align: center;
 }
 
 /***
@@ -194,7 +215,9 @@ Nav
 	display: block;
 }
 
-/**/
+/*******
+Carousel
+*******/
 * {
 	box-sizing: border-box
 }
@@ -242,13 +265,15 @@ Nav
 
 /* Caption text */
 .text {
-	color: #f2f2f2;
+	background-color: rgb(211,211,211,0.9);
+	border-radius: 10px;
+	bottom: 8px;
+	color: black;
 	font-size: 15px;
 	padding: 8px 12px;
 	position: absolute;
-	bottom: 8px;
-	width: 100%;
 	text-align: center;
+	width: 100%;
 }
 
 /* The dots/bullets/indicators */
@@ -270,8 +295,8 @@ Nav
 
 /* Fading animation */
 .fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-name: slide;
+	animation-duration: 3s;
 }
 
 @keyframes fade {
