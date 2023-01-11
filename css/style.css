@@ -1,91 +1,62 @@
 body {
 	font-family: 'Zilla Slab', serif;
+	margin: 0;
 }
 
 header h1 {
 	font-family: 'Bitter', serif;
+	font-weight: 500;
 }
 
 div h2 {
 	font-family: 'Bitter', serif;
+	margin: 0;
 	text-align: right;
 }
 
 div h3 {
 	font-family: 'Zilla Slab', serif;
+	font-weight: 400;
 	margin: 10px;
 	text-align: center;
 }
 
 div h4 {
 	font-family: 'Bitter', serif;
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: 500;
 	text-align: center;
 }
 
-div p {padding: 0px 10px;}
+div p {
+	padding: 0px 10px;
+}
 
-p {text-align: justify;}
+p {
+	text-align: justify;
+}
 
-section,div p {
+section,
+div p {
 	font-family: 'Zilla Slab', serif;
 }
 
-ul li {
-	font-family: 'Zilla Slab', serif;
-	font-size: 18px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+	display: block;
 }
 
-/*fieldset {
-	border-color: black;
-	border: solid;
-	margin: 5px 0;
-}*/
+header,
+footer {
+	font-family: 'Zilla Slab', serif;
+	text-align: center;
+}
 
 fieldset {
-	display: block;
-	margin-left: 2px;
-	margin-right: 2px;
-	padding-top: 0.35em;
-	padding-bottom: 0.625em;
-	padding-left: 0.75em;
-	padding-right: 0.75em;
-	border: 2px groove (internal value);
-  }
-
-fieldset legend {
-	font-family: 'Zilla Slab', serif;
-}
-
-fieldset p {
-	font-family: 'Bitter', serif;
-	margin: 0px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-fieldset li {
-	font-family: 'Zilla Slab', serif;
-	margin: 0px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-legend {
-	font-size: 15px;
-}
-
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
-	display: block;
-}
-
-header, footer {
-	font-family: 'Zilla Slab', serif;
-	text-align: center;
-}
-
-footer {
-	font-size: 16px;
+	display: inline-block;
+	margin: 15px;
 }
 
 div img {
@@ -98,6 +69,10 @@ button img {
 	border-radius: 5px;
 }
 
+ul {
+	padding-left: 40px;
+}
+
 input {
 	border-radius: 5px;
 	background-color: gray;
@@ -108,7 +83,7 @@ input:hover {
 	box-shadow: 0 0 0 2px black;
 }
 
- /*******
+/*******
 Classes
 *******/
 .columns {
@@ -116,7 +91,7 @@ Classes
 	grid-gap: 25px;
 	margin: 0 auto;
 	max-width: 1440px;
-	padding-bottom: 25px;
+	padding: 15px 0;
 	width: 95%;
 }
 
@@ -125,8 +100,13 @@ Classes
 	padding: 10px;
 }
 
-.right {width: 45%;}
-.left {width: 55%;}
+.right {
+	width: 45%;
+}
+
+.left {
+	width: 55%;
+}
 
 .border {
 	border: 2px solid #000;
@@ -139,64 +119,223 @@ Classes
 	margin-right: auto;
 }
 
-.carousel-inner {
-	border-radius: 5px;
-	transition: 5s;
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.45);
-	border-radius: 15px;
-}
-
-.carousel-caption p {
-	font-size: 15px;
-}
-  
-/* .carousel-caption {
-    width:100%;
-    height:100%;;
-}
-
-.carousel-caption h3 {
-  text-align:left;
-  margin-left:30px;
-}
-
 /***
 Nav
 ***/
-nav {
-	font-family: 'Zilla Slab', serif;
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
 }
 
-nav:hover ul {
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
+	margin: 0;
+	/* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	background-color: darkgray;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
 	display: block;
+	text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/**/
+* {
+	box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
 }
 
 /************
 Media Queries
 ************/
 @media screen and (min-width: 425px) {
-	header h1 {font-size: 25px;}
-	h1 {font-size: 20px;}
+	header h1 {
+		font-size: 25px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
 	section {
 		font-size: 15px;
 		padding: 5px 10px;
 	}
+
+	ul {
+		padding-left: 40px;
+	}
 }
 
 @media screen and (min-width: 768px) {
-	p {font-size: 16px;}
-	h1 {font-size: 30px;}
-	header h1 {font-size: 30px;}
-	h2 {font-size: 36px;}
-	h3 {font-size: 25px;}
+	p {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	header h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
 	section {
 		font-size: 25px;
 		padding: 5px 32px;
 	}
-	section h3 {font-size: 20px;}
+
+	section h3 {
+		font-size: 20px;
+	}
+
 	nav ul {
 		background: transparent;
 		display: inline-block;
@@ -205,56 +344,189 @@ Media Queries
 		top: 18px;
 		width: 75%;
 	}
+
 	nav li {
 		display: inline-block;
 		padding: 10px;
 		width: 15%
 	}
-	#hamburger {padding-right: 10px;}
-	input[type="submit"] {font-size: 15px;}
-	legend {font-size: 20px;}
-	ol li {font-size: 16px;}
-	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 16px;}
+
+	#hamburger {
+		padding-right: 10px;
+	}
+
+	input[type="submit"] {
+		font-size: 15px;
+	}
+
+	legend {
+		font-size: 20px;
+	}
+
+	ul li {
+		font-size: 16px;
+	}
+
+	ul {
+		padding-left: 30px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"] {
+		font-size: 16px;
+	}
+
+	.columns {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
 }
 
 @media screen and (min-width: 1024px) {
-	p {font-size: 17px;}
-	h1 {font-size: 40px;}
-	header h1 {font-size: 40px;}
-	h3 {font-size: 37px;}
-	section h1 {font-size: 30px;}
-	label {font-size: 17px;}
-	legend {font-size: 22px;}
-	input[type="submit"] {font-size: 15px;}
-	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 17px;}
-	#hamburger {display: none;}
-	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+	p {
+		font-size: 17px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	header h1 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 37px;
+	}
+
+	section h1 {
+		font-size: 30px;
+	}
+
+	label {
+		font-size: 17px;
+	}
+
+	legend {
+		font-size: 22px;
+	}
+
+	input[type="submit"] {
+		font-size: 15px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"] {
+		font-size: 17px;
+	}
+
+	.columns {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
 }
 
 @media screen and (min-width: 1440px) {
-	p {font-size: 18px;}
-	h1 {font-size: 30px;}
-	fieldset h3 {font-size: 22px;}
-	section h1 {font-size: 35px;}
-	section h3 {font-size: 27px;}
-	label {font-size: 23px;}
-	fieldset legend {font-size: 27px;}
-	input[type="submit"] {font-size: 16px;}
-	ol li {font-size: 25px;}
-	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 23px;}
-	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+	p {
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	fieldset h3 {
+		font-size: 22px;
+	}
+
+	section h1 {
+		font-size: 35px;
+	}
+
+	section h3 {
+		font-size: 27px;
+	}
+
+	label {
+		font-size: 23px;
+	}
+
+	fieldset legend {
+		font-size: 27px;
+	}
+
+	input[type="submit"] {
+		font-size: 16px;
+	}
+
+	ul li {
+		font-size: 24px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"] {
+		font-size: 23px;
+	}
+
+	.columns {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+
 }
 
 @media screen and (min-width: 2560px) {
-	p {font-size: 28px;}
-	h1 {font-size: 40px;}
-	section h1 {font-size: 40px;}
-	section h3 {font-size: 32px;}
-	label {font-size: 28px;}
-	legend {font-size: 32px;}
-	input[type="submit"] {font-size: 25px;}
-	ol li {font-size: 30px;}
-	input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {font-size: 28px;}
-	nav {font-size: 30px;}
-	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+	p {
+		font-size: 28px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	section h1 {
+		font-size: 40px;
+	}
+
+	section h3 {
+		font-size: 32px;
+	}
+
+	label {
+		font-size: 28px;
+	}
+
+	legend {
+		font-size: 32px;
+	}
+
+	input[type="submit"] {
+		font-size: 25px;
+	}
+
+	ol li {
+		font-size: 30px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"] {
+		font-size: 28px;
+	}
+
+	nav {
+		font-size: 30px;
+	}
+
+	.columns {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
 }
