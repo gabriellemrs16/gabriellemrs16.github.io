@@ -39,6 +39,7 @@
                     </a>
                 </div>
             </div>
+            <a href="contact.html">Contact</a>
         </div>
         <h1>Sample Work</h1>
     </header>
@@ -101,25 +102,13 @@
                     </form>
                 </div>
             </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
+            <br>
     </section>
     <!-- end carousel -->
 
     <!-- more info -->
-    <section>
+    <div class="bord">
+        <h5>Additional Information</h5>
         <div class="columns">
             <div class="border">
                 <h4>PowerBI and Database Courses</h4>
@@ -134,7 +123,8 @@
                 <p>In my Big Data Programming and Reporting course, I was taught how to use Hadoop with Apache Spark in
                     Ubuntu. I also used pyspark in Jupyter Notebook with python.
                 </p>
-                <form action="https://github.com/gabriellemrs16/PowerBI-Final-Project/blob/main/grickersingh_final.pdf" target="_blank">
+                <form action="https://github.com/gabriellemrs16/PowerBI-Final-Project/blob/main/grickersingh_final.pdf"
+                    target="_blank">
                     <input type="submit" value="View PowerBI" />
                 </form>
             </div>
@@ -176,7 +166,11 @@
                 </form>
             </div>
         </div>
-    </section>
+    </div>
+
+    <footer>
+        <b>2023 Gabrielle Ricker-Singh &#8211; Portfolio</b>
+    </footer>
 
     <script>
         let slideIndex = 0;
@@ -193,10 +187,9 @@
                 slideIndex = 1
             }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            setTimeout(showSlides, 10000); // Change image every 10 seconds
         }
     </script>
 
 </body>
-
 </html>
