@@ -6,6 +6,8 @@ body {
 header h1 {
 	font-family: 'Bitter', serif;
 	font-weight: 500;
+	margin: 0;
+	margin-top: 12px;
 }
 
 div h2 {
@@ -44,8 +46,11 @@ div p {
 }
 
 p {
+	margin: 9px 0;
 	text-align: justify;
 }
+
+form li {text-align: left;}
 
 section,
 div p {
@@ -361,9 +366,9 @@ Media Queries
 	h1 {font-size: 55px;}
 	h2 {font-size: 37px;}
 	h3 {font-size: 35px;}
-	h4 {font-size: 30px;}
+	div h4 {font-size: 26px;}
 	input {font-size: 25px;}
-	legend {font-size: 40px;}
+	legend {font-size: 35px;}
 	p {font-size: 25px;}
 	.slideshow-container {height: 800px;}
 	ul li {font-size: 25px;}
