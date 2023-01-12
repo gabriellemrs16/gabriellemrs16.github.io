@@ -6,8 +6,7 @@ body {
 header h1 {
 	font-family: 'Bitter', serif;
 	font-weight: 500;
-	margin: 0;
-	margin-top: 12px;
+	margin: 10px 0;
 }
 
 div h2 {
@@ -71,12 +70,12 @@ footer {
 }
 
 footer {
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
 
 fieldset {
 	display: inline-block;
-	margin: 15px;
+	margin: 5px 15px;
 }
 
 ul {
@@ -165,49 +164,53 @@ Classes
 /***
 Nav
 ***/
-/* Navbar container */
-.navbar {
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: #696969;
 	overflow: hidden;
-	background-color: #333;
 }
 
-/* Links inside the navbar */
-.navbar a {
+/* Style the links inside the navigation bar */
+.topnav a {
 	float: left;
-	font-size: 16px;
-	color: white;
+	display: block;
+	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 17px;
 }
 
-/* The dropdown container */
+/* Add an active class to highlight the current page */
+.active {
+	background-color: black;
+	color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
 .dropdown {
 	float: left;
 	overflow: hidden;
 }
 
-/* Dropdown button */
+/* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-	font-size: 16px;
+	font-size: 17px;
 	border: none;
 	outline: none;
 	color: white;
 	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit;
-	/* Important for vertical align on mobile phones */
 	margin: 0;
-	/* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-	background-color: darkgray;
-}
-
-/* Dropdown content (hidden by default) */
+/* Style the dropdown content (hidden by default) */
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -217,7 +220,7 @@ Nav
 	z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Style the links inside the dropdown */
 .dropdown-content a {
 	float: none;
 	color: black;
@@ -227,12 +230,20 @@ Nav
 	text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-	background-color: #ddd;
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+	background-color: #555;
+	color: white;
 }
 
-/* Show the dropdown menu on hover */
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
 	display: block;
 }
@@ -329,9 +340,23 @@ Carousel
 /************
 Media Queries
 ************/
+@media screen and (min-width: 375px) {
+	.border {margin: 0 7px;}
+	.center {height: 150px;}
+	h2 {font-size: 20px;}
+	h3 {font-size: 20px;}
+	div h4 {font-size: 18px;}
+	div h5 {font-size: 22px;}
+	legend {font-size: 22px;}
+	p {font-size: 18px;}
+	.left {width: 55%;}
+	.right {width: 40%;}
+	.slideshow-container {height: 420px;}
+}
+
 @media screen and (min-width: 425px) {
 	.border {margin: 0 7px;}
-	.center {height: 140px;}
+	.center {height: 150px;}
 	h2 {font-size: 20px;}
 	h3 {font-size: 20px;}
 	h5 {font-size: 16px;}
@@ -339,6 +364,37 @@ Media Queries
 	.left {width: 55%;}
 	.right {width: 40%;}
 	.slideshow-container {height: 420px;}
+}
+
+@media screen and (max-width: 600px) {
+
+	.topnav a:not(:first-child),
+	.dropdown .dropbtn {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.topnav.responsive .dropdown {float: none;}
+	.topnav.responsive .dropdown-content {position: relative;}
+	.topnav.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -365,11 +421,11 @@ Media Queries
 	footer {font-size: 25px;}
 	h1 {font-size: 55px;}
 	h2 {font-size: 37px;}
-	h3 {font-size: 35px;}
+	h3 {font-size: 30px;}
 	div h4 {font-size: 26px;}
 	input {font-size: 25px;}
 	legend {font-size: 35px;}
-	p {font-size: 25px;}
+	p {font-size: 27px;}
 	.slideshow-container {height: 800px;}
 	ul li {font-size: 25px;}
 }

@@ -12,12 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <!-- navbar -->
-        <div class="navbar">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
             <div class="dropdown">
@@ -35,11 +36,11 @@
                 </button>
                 <div class="dropdown-content">
                     <a href="ITservices.html">Services</a>
-                    <a href="ITpricing.html">Pricing
-                    </a>
+                    <a href="ITpricing.html">Pricing</a>
                 </div>
             </div>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <h1>Contact</h1>
     </header>
@@ -59,5 +60,17 @@
     <footer>
         <b>2023 Gabrielle Ricker-Singh &#8211; Portfolio</b>
     </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
 </body>
 </html>
