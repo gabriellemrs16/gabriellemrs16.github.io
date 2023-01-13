@@ -1,6 +1,7 @@
 body {
 	font-family: 'Zilla Slab', serif;
 	margin: 0;
+	text-align: center;
 }
 
 header h1 {
@@ -49,28 +50,18 @@ p {
 	text-align: justify;
 }
 
-form li {text-align: left;}
+form li, ul li {text-align: left;}
 
 section,
 div p {
 	font-family: 'Zilla Slab', serif;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"] {
-	display: block;
-}
+input[type="text"],input[type="email"],input[type="tel"],input[type="number"] {display: block;}
 
-header,
-footer {
+header {
 	font-family: 'Zilla Slab', serif;
 	text-align: center;
-}
-
-footer {
-	margin: 15px 0;
 }
 
 fieldset {
@@ -89,7 +80,9 @@ form {
 
 input {
 	border-radius: 5px;
-	background-color: gray;
+	background-color: darkgray;
+	font-family: 'Zilla Slab', serif;
+	font-weight: 500;
 }
 
 input:hover {
@@ -130,6 +123,13 @@ Classes
 	margin-top: 50px;
 }
 
+.bords {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.bords fieldset {margin-bottom: 14px;}
+
 .border {
 	border: 1px solid black;
 	padding: 8px;
@@ -144,21 +144,6 @@ Classes
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.child {
-	position: absolute;
-	bottom: 5px;
-	width: 100%;
-}
-
-.child input {
-	margin: 0 auto;
-}
-
-.parent {
-	display: table;
-	text-align: center;
 }
 
 /***
@@ -257,9 +242,8 @@ Carousel
 
 /* Slideshow container */
 .slideshow-container {
-	max-width: 1000px;
 	position: relative;
-	margin: auto;
+	margin: 0 auto;
 }
 
 /* Hide the images by default */
@@ -344,26 +328,28 @@ Media Queries
 	.border {margin: 0 7px;}
 	.center {height: 150px;}
 	h2 {font-size: 20px;}
-	h3 {font-size: 20px;}
-	div h4 {font-size: 18px;}
-	div h5 {font-size: 22px;}
-	legend {font-size: 22px;}
-	p {font-size: 18px;}
+	h3 {font-size: 25px;}
+	div h4 {font-size: 21px;}
+	div h5 {font-size: 30px;}
+	legend {font-size: 25px;}
+	p {font-size: 20px;}
+	ul li {font-size: 20px;}
+	input {font-size: 20px;}
 	.left {width: 55%;}
 	.right {width: 40%;}
-	.slideshow-container {height: 420px;}
+	.slideshow-container {height: 460px;}
 }
 
 @media screen and (min-width: 425px) {
 	.border {margin: 0 7px;}
 	.center {height: 150px;}
-	h2 {font-size: 20px;}
-	h3 {font-size: 20px;}
-	h5 {font-size: 16px;}
-	legend {font-size: 22px;}
+	h2 {font-size: 23px;}
+	h3 {font-size: 30px;}
+	div h5 {font-size: 30px;}
+	legend {font-size: 27px;}
 	.left {width: 55%;}
 	.right {width: 40%;}
-	.slideshow-container {height: 420px;}
+	.slideshow-container {height: 530px;}
 }
 
 @media screen and (max-width: 600px) {
@@ -398,34 +384,40 @@ Media Queries
 }
 
 @media screen and (min-width: 768px) {
-	.center {height: 220px;}
+	.center {height: 270px;}
 	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
 	h2 {font-size: 23px;}
-	.slideshow-container {height: 575px;}
+	h3 {font-size: 27px;}
+	div h4 {font-size: 23px;}
+	div h5 {font-size: 37px;}
+	.slideshow-container {height: 570px;}
 }
 
 @media screen and (min-width: 1024px) {
 	.center {height: 350px;}
-	fieldset p {font-size: 23px;}
-	h1 {font-size: 40px;}
+	fieldset p {font-size: 20px;}
+	h1 {font-size: 37px;}
 	h2 {font-size: 30px;}
 	h3 {font-size: 27px;}
+	div h4 {font-size: 20px;}
+	div h5 {font-size: 30px;}
 	legend {font-size: 30px;}
 	.navbar {font-size: 20px;}
-	.slideshow-container {height: 770px;}
+	.slideshow-container {height: 650px;}
 }
 
 @media screen and (min-width: 1440px) {
 	.center {height: 550px;}
 	.column {padding: 0;}
-	footer {font-size: 25px;}
-	h1 {font-size: 55px;}
+	h1 {font-size: 42px;}
 	h2 {font-size: 37px;}
 	h3 {font-size: 30px;}
-	div h4 {font-size: 26px;}
+	div h4 {font-size: 27px;}
+	div h5 {font-size: 40px;}
 	input {font-size: 25px;}
 	legend {font-size: 35px;}
 	p {font-size: 27px;}
-	.slideshow-container {height: 800px;}
+	.slideshow-container {height: 930px;}
 	ul li {font-size: 25px;}
+	.navbar {font-size: 20px;}
 }
