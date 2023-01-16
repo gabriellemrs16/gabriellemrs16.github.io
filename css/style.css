@@ -421,3 +421,16 @@ Media Queries
 	ul li {font-size: 25px;}
 	.navbar {font-size: 20px;}
 }
+
+@media screen and (max-width: 2560px) {
+	h1 {font-size: 50px;}
+	p {font-size: 30px;}
+	.center {height: 650px;}
+	.navbar {font-size: 25px;}
+	.slideshow-container {height: 1500px;}
+	.left {width: 53%;}
+	.right {
+		margin-left: 200px;
+		width: 30%;
+	}
+}
