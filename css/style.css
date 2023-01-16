@@ -90,11 +90,6 @@ input:hover {
 	box-shadow: 0 0 0 1px black;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 /*******
 Classes
 *******/
@@ -247,8 +242,9 @@ Carousel
 
 /* Slideshow container */
 .slideshow-container {
-	position: relative;
+	height: auto;
 	margin: 0 auto;
+	position: relative;
 }
 
 /* Hide the images by default */
@@ -432,6 +428,6 @@ Media Queries
 	p {font-size: 30px;}
 	.center {height: 650px;}
 	.navbar {font-size: 25px;}
-	.slideshow-container {height: 1500px;}
+	.slideshow-container {height: auto;}
 	.left {width: 54%;}
 }
