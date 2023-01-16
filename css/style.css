@@ -90,6 +90,11 @@ input:hover {
 	box-shadow: 0 0 0 1px black;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /*******
 Classes
 *******/
@@ -428,9 +433,5 @@ Media Queries
 	.center {height: 650px;}
 	.navbar {font-size: 25px;}
 	.slideshow-container {height: 1500px;}
-	.left {width: 53%;}
-	.right {
-		margin-left: 200px;
-		width: 30%;
-	}
+	.left {width: 54%;}
 }
