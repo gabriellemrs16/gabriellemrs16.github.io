@@ -326,7 +326,7 @@ Media Queries
 ************/
 @media screen and (min-width: 375px) {
 	.border {margin: 0 7px;}
-	.center {height: 150px;}
+	.center {height: 130px;}
 	h2 {font-size: 20px;}
 	h3 {font-size: 25px;}
 	div h4 {font-size: 21px;}
@@ -335,7 +335,7 @@ Media Queries
 	p {font-size: 20px;}
 	ul li {font-size: 20px;}
 	input {font-size: 20px;}
-	.left {width: 55%;}
+	.left {width: 54%;}
 	.right {width: 40%;}
 	.slideshow-container {height: 460px;}
 }
