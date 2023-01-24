@@ -146,6 +146,11 @@ Classes
 	margin-right: auto;
 }
 
+.response {
+	height: auto;
+	max-width: 100%;
+}
+
 /***
 Nav
 ***/
@@ -327,7 +332,6 @@ Media Queries
 ************/
 @media screen and (min-width: 375px) {
 	.border {margin: 0 7px;}
-	.center {height: 130px;}
 	h2 {font-size: 20px;}
 	h3 {font-size: 25px;}
 	div h4 {font-size: 21px;}
@@ -343,7 +347,6 @@ Media Queries
 
 @media screen and (min-width: 425px) {
 	.border {margin: 0 7px;}
-	.center {height: 150px;}
 	h2 {font-size: 23px;}
 	h3 {font-size: 30px;}
 	div h5 {font-size: 30px;}
@@ -385,7 +388,6 @@ Media Queries
 }
 
 @media screen and (min-width: 768px) {
-	.center {height: 270px;}
 	.columns {grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
 	h2 {font-size: 23px;}
 	h3 {font-size: 27px;}
@@ -395,7 +397,6 @@ Media Queries
 }
 
 @media screen and (min-width: 1024px) {
-	.center {height: 350px;}
 	fieldset p {font-size: 20px;}
 	h1 {font-size: 37px;}
 	h2 {font-size: 30px;}
@@ -408,7 +409,6 @@ Media Queries
 }
 
 @media screen and (min-width: 1440px) {
-	.center {height: 550px;}
 	.column {padding: 0;}
 	h1 {font-size: 42px;}
 	h2 {font-size: 37px;}
@@ -426,7 +426,6 @@ Media Queries
 @media screen and (max-width: 2560px) {
 	h1 {font-size: 50px;}
 	p {font-size: 30px;}
-	.center {height: 650px;}
 	.navbar {font-size: 25px;}
 	.slideshow-container {height: auto;}
 	.left {width: 54%;}
