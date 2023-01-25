@@ -347,6 +347,14 @@ Media Queries
 	.slideshow-container {height: 460px;}
 }
 
+@media screen and (max-width: 400px) {
+	fieldset p {font-size: 19px;}
+}
+
+@media screen and (min-width: 401px) {
+	fieldset p {font-size: 21px;}
+}
+
 @media screen and (min-width: 425px) {
 	.border {margin: 0 7px;}
 	h1 {font-size: 35px;}
@@ -391,7 +399,6 @@ Media Queries
 }
 
 @media screen and (max-width: 768px) {
-	fieldset p {font-size: 19px;}
 	iframe {
 		height: 1850px;
 		width: auto;
