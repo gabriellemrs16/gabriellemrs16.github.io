@@ -339,7 +339,7 @@ Media Queries
 	div h4 {font-size: 21px;}
 	div h5 {font-size: 30px;}
 	legend {font-size: 25px;}
-	div p {font-size: 19px;}
+	div p, input {font-size: 19px;}
 	ul li {font-size: 20px;}
 	input {font-size: 20px;}
 	.left {width: 54%;}
@@ -361,7 +361,7 @@ Media Queries
 	h2 {font-size: 23px;}
 	h3 {font-size: 30px;}
 	div h5 {font-size: 30px;}
-	div p {font-size: 19px;}
+	div p, input {font-size: 19px;}
 	legend {font-size: 27px;}
 	.left {width: 55%;}
 	.right {width: 40%;}
@@ -403,6 +403,18 @@ Media Queries
 		height: 1850px;
 		width: auto;
 	}
+	.text h3 {
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.text p {
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.text input {
+		font-size: 13px;
+		font-weight: 600;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -411,7 +423,7 @@ Media Queries
 	h3 {font-size: 27px;}
 	div h4 {font-size: 23px;}
 	div h5 {font-size: 37px;}
-	div p {font-size: 20px;}
+	div p, input {font-size: 20px;}
 	.slideshow-container {height: 570px;}
 }
 
@@ -423,7 +435,7 @@ Media Queries
 	div h4 {font-size: 20px;}
 	div h5 {font-size: 30px;}
 	legend {font-size: 30px;}
-	div p {font-size: 18px;}
+	div p, input {font-size: 18px;}
 	.navbar {font-size: 20px;}
 	.slideshow-container {height: 650px;}
 }
