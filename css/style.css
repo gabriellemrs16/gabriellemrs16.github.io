@@ -66,7 +66,7 @@ header {
 
 fieldset {
 	display: inline-block;
-	margin: 5px 15px;
+	margin: 10px;
 	width: auto;
 }
 
@@ -360,7 +360,6 @@ Media Queries
 }
 
 @media screen and (max-width: 600px) {
-
 	.topnav a:not(:first-child),
 	.dropdown .dropbtn {display: none;}
 	.topnav a.icon {
@@ -387,6 +386,13 @@ Media Queries
 		display: block;
 		width: 100%;
 		text-align: left;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	iframe {
+		height: 1850px;
+		width: auto;
 	}
 }
 
