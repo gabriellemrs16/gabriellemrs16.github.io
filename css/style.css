@@ -148,6 +148,11 @@ Classes
 	margin-right: auto;
 }
 
+.oval {
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
 .response {
 	height: auto;
 	max-width: 100%;
