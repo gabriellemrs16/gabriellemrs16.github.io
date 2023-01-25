@@ -449,7 +449,7 @@ Media Queries
 	div h5 {font-size: 40px;}
 	input {font-size: 25px;}
 	legend {font-size: 35px;}
-	p {font-size: 27px;}
+	p, input {font-size: 27px;}
 	.slideshow-container {height: 930px;}
 	ul li {font-size: 25px;}
 	.navbar {font-size: 20px;}
@@ -457,7 +457,7 @@ Media Queries
 
 @media screen and (max-width: 2560px) {
 	h1 {font-size: 50px;}
-	p {font-size: 30px;}
+	p, input {font-size: 30px;}
 	.navbar {font-size: 25px;}
 	.slideshow-container {height: auto;}
 	.left {width: 54%;}
