@@ -1,4 +1,5 @@
 body {
+	background-color: #ECECEC;
 	font-family: 'Zilla Slab', serif;
 	margin: 0;
 	text-align: center;
@@ -165,7 +166,7 @@ Nav
 .topnav a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+	color: #ECECEC;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
