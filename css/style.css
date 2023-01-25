@@ -391,6 +391,7 @@ Media Queries
 }
 
 @media screen and (max-width: 768px) {
+	fieldset p {font-size: 20px;}
 	iframe {
 		height: 1850px;
 		width: auto;
