@@ -432,6 +432,10 @@ Media Queries
 	.slideshow-container {height: 570px;}
 }
 
+@media screen and (min-width: 956px) {
+	.response {height: 400px;}
+}
+
 @media screen and (min-width: 1024px) {
 	fieldset p {font-size: 20px;}
 	h1 {font-size: 37px;}
