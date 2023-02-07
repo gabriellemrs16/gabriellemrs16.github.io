@@ -42,9 +42,15 @@ div h5 {
 	text-align: center;
 }
 
-div p {
-	padding: 0px 10px;
+div h6 {
+	font-family: 'Bitter', serif;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 7px 10px;
+	text-align: right;
 }
+
+div p {padding: 0px 10px;}
 
 p {
 	margin: 9px 0;
@@ -53,10 +59,7 @@ p {
 
 form li, ul li {text-align: left;}
 
-section,
-div p {
-	font-family: 'Zilla Slab', serif;
-}
+section, div p {font-family: 'Zilla Slab', serif;}
 
 input[type="text"],input[type="email"],input[type="tel"],input[type="number"] {display: block;}
 
@@ -71,9 +74,9 @@ fieldset {
 	width: auto;
 }
 
-ul {
-	padding-left: 40px;
-}
+fieldset ul {margin: 0;}
+
+ul {padding-left: 30px;}
 
 form {
 	text-align: center;
@@ -109,6 +112,8 @@ Classes
 	padding: 10px;
 }
 
+.download {text-align: center;}
+
 .image {
 	border: 2px solid black;
 	border-radius: 0px 20px;
@@ -117,6 +122,17 @@ Classes
 
 .right {width: 45%;}
 .left {width: 55%;}
+
+.left p {
+	margin: 10px;
+	margin-top: 3px;
+	padding: 0;
+}
+
+.left h2 {
+	margin-top: 7px;
+	margin-right: 10px;
+}
 
 .bord {
 	border: 1px solid black;
@@ -185,9 +201,7 @@ Nav
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-	display: none;
-}
+.topnav .icon {display: none;}
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
@@ -241,16 +255,12 @@ Nav
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-	display: block;
-}
+.dropdown:hover .dropdown-content {display: block;}
 
 /*******
 Carousel
 *******/
-* {
-	box-sizing: border-box
-}
+* {box-sizing: border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -260,9 +270,7 @@ Carousel
 }
 
 /* Hide the images by default */
-.mySlides {
-	display: none;
-}
+.mySlides {display: none;}
 
 /* Next & previous buttons */
 .prev,
@@ -443,6 +451,7 @@ Media Queries
 	h3 {font-size: 27px;}
 	div h4 {font-size: 20px;}
 	div h5 {font-size: 30px;}
+	div h6 {font-size: 23px;}
 	legend {font-size: 30px;}
 	div p, div input {font-size: 18px;}
 	.navbar {font-size: 20px;}
@@ -456,6 +465,7 @@ Media Queries
 	h3 {font-size: 30px;}
 	div h4 {font-size: 27px;}
 	div h5 {font-size: 40px;}
+	div h6 {font-size: 28px;}
 	input {font-size: 25px;}
 	legend {font-size: 35px;}
 	p {font-size: 27px;}
