@@ -107,10 +107,7 @@ Classes
 	width: 95%;
 }
 
-.column {
-	float: left;
-	padding: 10px;
-}
+.column {float: left;}
 
 .download {text-align: center;}
 
